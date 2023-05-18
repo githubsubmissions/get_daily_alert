@@ -20,8 +20,8 @@ class FoodSecurityServiceImpl(FoodSecurityService):
 
     def get_alerts(self, df_now, df_30_years_ago):
         food_security_df = self.get_food_security(df_now, df_30_years_ago)
-        self.craft_email(food_security_df)
-        self.craft_admin_email(food_security_df)
+        # self.craft_email(food_security_df)
+        # self.craft_admin_email(food_security_df)
         return food_security_df
 
     def get_food_security(self, df_now, df_30_years_ago):
